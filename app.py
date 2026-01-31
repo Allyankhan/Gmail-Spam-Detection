@@ -30,6 +30,5 @@ def predict():
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # Heroku provides PORT
+    port = int(os.environ.get("PORT", 5000))  # Railway sets PORT
     app.run(host="0.0.0.0", port=port)
-
