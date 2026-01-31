@@ -3,8 +3,10 @@ import joblib
 import os
 
 # Load model and vectorizer
-model = joblib.load("model.pkl")
-vectorizer = joblib.load("vectorizer.pkl")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+model = joblib.load(os.path.join(BASE_DIR, "model.pkl"))
+vectorizer = joblib.load(os.path.join(BASE_DIR, "vectorizer.pkl"))
 
 # Initialize Flask
 app = Flask(__name__)
@@ -29,6 +31,9 @@ def predict():
     return jsonify({"prediction": int(prediction)})
 
 
+import os
+
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # Railway sets PORT
+    port = int(os.environ.get("PORT", 5000))  # Railway sets this
     app.run(host="0.0.0.0", port=port)
+
