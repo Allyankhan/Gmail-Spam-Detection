@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template, jsonify
 import joblib
+import os
 
 # Load model and vectorizer
 model = joblib.load("model.pkl")
@@ -27,5 +28,8 @@ def predict():
     prediction = model.predict(vect_text)[0]
     return jsonify({"prediction": int(prediction)})
 
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
+    port = int(os.environ.get("PORT", 5000))  # Heroku provides PORT
+    app.run(host="0.0.0.0", port=port)
+
