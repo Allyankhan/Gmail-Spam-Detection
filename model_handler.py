@@ -16,13 +16,20 @@ def load_ml_assets():
     return model, vectorizer
 
 def predict_spam(text, model, vectorizer):
-    """Predicts if a given text is spam or ham."""
+    """Predicts if a given text is spam or ham, returning label and probability."""
     if not text:
         return "Clean", 0.0
     
     vect_text = vectorizer.transform([text])
     prediction = model.predict(vect_text)[0]
     
-    # 1 is typically Spam, 0 is Ham
+    # Calculate probability if the model supports it
+    probability = 0.0
+    if hasattr(model, "predict_proba"):
+        prob_array = model.predict_proba(vect_text)[0]
+        # Get the probability of the predicted class
+        probability = prob_array[1] if prediction == 1 else prob_array[0]
+        probability = round(probability * 100, 2)
+    
     label = "Spam" if prediction == 1 else "Clean"
-    return label
+    return label, probability
