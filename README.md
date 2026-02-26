@@ -1,104 +1,138 @@
-\documentclass[11pt,a4paper]{article}
+# 📧 Gmail-Spam-Detection_Using-Machine_Learning
 
-\usepackage[margin=1in]{geometry}
-\usepackage{hyperref}
-\usepackage{enumitem}
-\usepackage{xcolor}
-\usepackage{titlesec}
+## Machine Learning–Based Gmail Spam Detection & Threat Intelligence System
 
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    urlcolor=blue
-}
+A real-time spam detection system that securely connects to your Gmail inbox, analyzes incoming emails using machine learning, and performs advanced malicious activity checks.
 
-\titleformat{\section}{\large\bfseries}{}{0em}{}
-\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+---
 
-\title{\textbf{Gmail-Spam-Detection\_Using-Machine\_Learning} \\[6pt]
-\large Machine Learning–Based Gmail Spam Detection \& Threat Intelligence System}
+## 🚀 Project Overview
 
-\author{}
-\date{}
+This project is an **end-to-end spam detection and threat intelligence system** that integrates directly with Gmail using OAuth 2.0 authentication. It automatically monitors incoming emails, classifies them using a Machine Learning model, and performs malicious URL & attachment scanning via VirusTotal.
 
-\begin{document}
+It combines **Machine Learning + Cybersecurity + Cloud API Integration** into a production-ready Python application.
 
-\maketitle
-\hrule
-\vspace{0.5cm}
+---
 
-\section*{Project Overview}
+## 🧠 System Architecture
 
-This project is an end-to-end spam detection and threat intelligence system that integrates directly with Gmail using OAuth 2.0 authentication. It automatically monitors incoming emails, classifies them using a Machine Learning model, and performs malicious URL and attachment scanning via the VirusTotal API.
+### 🔐 Secure Gmail Integration
+- OAuth 2.0 authentication  
+- Real-time inbox access via Gmail API  
+- Automated fetching of new emails  
 
-The system combines \textbf{Machine Learning, Cybersecurity, and Cloud API Integration} into a production-ready Python application.
+### 📊 Machine Learning Pipeline
+- Text preprocessing & cleaning  
+- TF-IDF vectorization  
+- Multinomial Naive Bayes classifier  
+- Probability-based scoring for interpretability  
 
-\section*{System Architecture}
+### 🛡️ Threat Intelligence Layer
+- VirusTotal API integration  
+- Malicious URL detection  
+- Suspicious attachment scanning  
+- Real-time threat analysis  
 
-\subsection*{Secure Gmail Integration}
-\begin{itemize}[leftmargin=*]
-    \item OAuth 2.0 authentication
-    \item Real-time inbox access via Gmail API
-    \item Automated fetching of new emails
-\end{itemize}
+### 📈 Interactive Dashboard
+- Built with Streamlit  
+- Live spam prediction results  
+- Threat detection insights  
+- Email risk scoring visualization  
 
-\subsection*{Machine Learning Pipeline}
-\begin{itemize}[leftmargin=*]
-    \item Text preprocessing and cleaning
-    \item TF-IDF vectorization
-    \item Multinomial Naive Bayes classifier
-    \item Probability-based scoring for interpretability
-\end{itemize}
+---
 
-\subsection*{Threat Intelligence Layer}
-\begin{itemize}[leftmargin=*]
-    \item VirusTotal API integration
-    \item Malicious URL detection
-    \item Suspicious attachment scanning
-    \item Real-time threat analysis
-\end{itemize}
+## 🏗️ Tech Stack
 
-\subsection*{Interactive Dashboard}
-\begin{itemize}[leftmargin=*]
-    \item Built with Streamlit
-    \item Live spam prediction results
-    \item Threat detection insights
-    \item Email risk scoring visualization
-\end{itemize}
+- Python  
+- Scikit-learn  
+- Streamlit  
+- Gmail API  
+- VirusTotal API  
 
-\section*{Tech Stack}
+---
 
-\begin{itemize}[leftmargin=*]
-    \item Python
-    \item Scikit-learn
-    \item Streamlit
-    \item Gmail API
-    \item VirusTotal API
-\end{itemize}
+## ⚙️ How It Works
 
-\section*{How It Works}
+1. 🔑 User authenticates securely via Gmail OAuth 2.0  
+2. 📥 System fetches new emails in real time  
+3. 🧹 Email text is preprocessed and vectorized (TF-IDF)  
+4. 🤖 Multinomial Naive Bayes predicts spam probability  
+5. 🔍 URLs & attachments are scanned using VirusTotal  
+6. 📊 Results are displayed on an interactive dashboard  
 
-\begin{enumerate}[leftmargin=*]
-    \item User authenticates securely via Gmail OAuth 2.0
-    \item System fetches new emails in real time
-    \item Email text is preprocessed and vectorized using TF-IDF
-    \item Multinomial Naive Bayes predicts spam probability
-    \item URLs and attachments are scanned using VirusTotal
-    \item Results are displayed on an interactive dashboard
-\end{enumerate}
+---
 
-\section*{Model Details}
+## 📦 Installation
 
-\begin{itemize}[leftmargin=*]
-    \item \textbf{Algorithm:} Multinomial Naive Bayes
-    \item \textbf{Vectorization:} TF-IDF
-    \item \textbf{Feature Type:} Email text content
-    \item \textbf{Output:} Spam probability score
-\end{itemize}
+### 1️⃣ Clone the Repository
 
-\section*{Project Structure}
+```bash
+git clone https://github.com/Allyankhan/Gmail-Spam-Detection_Using-Machine_Learning.git
+cd Gmail-Spam-Detection_Using-Machine_Learning
+2️⃣ Create Virtual Environment (Recommended)
+python -m venv venv
 
-\begin{verbatim}
+Activate the environment:
+
+Mac/Linux
+
+source venv/bin/activate
+
+Windows
+
+venv\Scripts\activate
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+🔑 API Configuration
+Gmail API Setup
+
+Go to Google Cloud Console
+
+Create a new project
+
+Enable Gmail API
+
+Configure OAuth consent screen
+
+Download credentials.json
+
+Place it in the project root directory
+
+VirusTotal API Setup
+
+Create an account at https://www.virustotal.com
+
+Generate your API key
+
+Add your API key to a .env file:
+
+VIRUSTOTAL_API_KEY=your_api_key_here
+▶️ Running the Application
+streamlit run app.py
+
+The dashboard will open in your browser automatically.
+
+📊 Model Details
+
+Algorithm: Multinomial Naive Bayes
+
+Vectorization: TF-IDF
+
+Feature Type: Email text content
+
+Output: Spam probability score (interpretable classification)
+
+🧩 Key Features
+
+✔ Secure OAuth-based Gmail integration
+✔ Real-time email monitoring
+✔ ML-powered spam classification
+✔ Probability-based risk scoring
+✔ URL & attachment threat detection
+✔ Interactive visualization dashboard
+✔ Modular and production-ready code structure
+
+🛠️ Project Structure
 ├── app.py
 ├── credentials.json
 ├── gmail_api.py
@@ -108,36 +142,51 @@ The system combines \textbf{Machine Learning, Cybersecurity, and Cloud API Integ
 ├── vectorizer.pkl
 ├── vt_api.py
 └── README.md
-\end{verbatim}
+🎯 What This Project Demonstrates
 
-\section*{What This Project Demonstrates}
+✅ End-to-end ML pipeline development
 
-\begin{itemize}[leftmargin=*]
-    \item End-to-end ML pipeline development
-    \item Secure OAuth-based Gmail integration
-    \item Real-time email monitoring architecture
-    \item Combining machine learning with cybersecurity workflows
-    \item Modular and scalable Python application design
-\end{itemize}
+✅ Secure OAuth-based Gmail integration
 
-\section*{Future Improvements}
+✅ Real-time email monitoring architecture
 
-\begin{itemize}[leftmargin=*]
-    \item Deep Learning-based spam classifier (LSTM / BERT)
-    \item Email phishing detection model
-    \item Cloud deployment (AWS / GCP / Azure)
-    \item Docker containerization
-    \item Admin monitoring dashboard
-    \item Automated model retraining pipeline
-\end{itemize}
+✅ Combining machine learning with cybersecurity workflows
 
-\section*{License}
+✅ Modular, scalable Python application design
+
+🔮 Future Improvements
+
+ Deep Learning-based spam classifier (LSTM / BERT)
+
+ Email phishing detection model
+
+ Deployment on cloud (AWS / GCP / Azure)
+
+ Docker containerization
+
+ Admin monitoring dashboard
+
+ Automated model retraining pipeline
+
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork the repository
+
+Create a feature branch
+
+Commit your changes
+
+Push to your branch
+
+Open a Pull Request
+
+📄 License
 
 This project is licensed under the MIT License.
+See the LICENSE file for details.
 
-\vspace{1cm}
-\hrule
-\vspace{0.3cm}
-\centerline{\textit{Built with Machine Learning + Cybersecurity + Cloud Integration}}
+⭐ Support
 
-\end{document}
+If you found this project useful, please consider giving it a ⭐ on Gi
