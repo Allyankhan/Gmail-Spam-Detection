@@ -76,12 +76,16 @@ VirusTotal API
 
 📦 Installation
 1️⃣ Clone the Repository
-git clone https://github.com/yourusername/Gmail-Spam-Detection_Using-Machine_Learning.git
+git clone https://github.com/Allyankhan/Gmail-Spam-Detection_Using-Machine_Learning.git
 cd Gmail-Spam-Detection_Using-Machine_Learning
 2️⃣ Create Virtual Environment (Recommended)
+
 python -m venv venv
+
 source venv/bin/activate  # Mac/Linux
+
 venv\Scripts\activate     # Windows
+
 3️⃣ Install Dependencies
 pip install -r requirements.txt
 🔑 API Configuration
