@@ -64,53 +64,28 @@ It combines **Machine Learning + Cybersecurity + Cloud API Integration** into a 
 
 ## 📦 Installation
 
-### 1️⃣ Clone the Repository
 
 ```bash
+# 1️⃣ Clone the Repository
 git clone https://github.com/Allyankhan/Gmail-Spam-Detection_Using-Machine_Learning.git
 cd Gmail-Spam-Detection_Using-Machine_Learning
-2️⃣ Create Virtual Environment (Recommended)
+
+# 2️⃣ Create a virtual environment
 python -m venv venv
 
-Activate the environment:
-
-Mac/Linux
-
+# Activate the environment (Linux/Mac)
 source venv/bin/activate
-
-Windows
-
+# Activate the environment (Windows)
 venv\Scripts\activate
-3️⃣ Install Dependencies
+
+# 3️⃣ Install dependencies
 pip install -r requirements.txt
-🔑 API Configuration
-Gmail API Setup
 
-Go to Google Cloud Console
-
-Create a new project
-
-Enable Gmail API
-
-Configure OAuth consent screen
-
-Download credentials.json
-
-Place it in the project root directory
-
-VirusTotal API Setup
-
-Create an account at https://www.virustotal.com
-
-Generate your API key
-
-Add your API key to a .env file:
-
-VIRUSTOTAL_API_KEY=your_api_key_here
-▶️ Running the Application
+# 4️⃣ Run the Streamlit app
 streamlit run app.py
+bash```
 
-The dashboard will open in your browser automatically.
+```````
 
 📊 Model Details
 
@@ -131,7 +106,7 @@ Output: Spam probability score (interpretable classification)
 ✔ URL & attachment threat detection
 ✔ Interactive visualization dashboard
 ✔ Modular and production-ready code structure
-
+```bash
 🛠️ Project Structure
 ├── app.py
 ├── credentials.json
@@ -142,6 +117,7 @@ Output: Spam probability score (interpretable classification)
 ├── vectorizer.pkl
 ├── vt_api.py
 └── README.md
+`````
 🎯 What This Project Demonstrates
 
 ✅ End-to-end ML pipeline development
@@ -154,7 +130,7 @@ Output: Spam probability score (interpretable classification)
 
 ✅ Modular, scalable Python application design
 
-🔮 Future Improvements
+ Future Improvements
 
  Deep Learning-based spam classifier (LSTM / BERT)
 
@@ -182,11 +158,11 @@ Push to your branch
 
 Open a Pull Request
 
-📄 License
+ License
 
 This project is licensed under the MIT License.
 See the LICENSE file for details.
 
 ⭐ Support
 
-If you found this project useful, please consider giving it a ⭐ on Gi
+If you found this project useful, please consider giving it a ⭐ on Github
