@@ -1,6 +1,10 @@
 # 📧 Gmail-Spam-Detection_Using-Machine_Learning
 
 ## Machine Learning–Based Gmail Spam Detection & Threat Intelligence System
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
 A real-time spam detection system that securely connects to your Gmail inbox, analyzes incoming emails using machine learning, and performs advanced malicious activity checks.
 
