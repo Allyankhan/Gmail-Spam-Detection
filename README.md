@@ -6,7 +6,7 @@ A real-time spam detection system that securely connects to your Gmail inbox, an
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 This project is an **end-to-end spam detection and threat intelligence system** that integrates directly with Gmail using OAuth 2.0 authentication. It automatically monitors incoming emails, classifies them using a Machine Learning model, and performs malicious URL & attachment scanning via VirusTotal.
 
@@ -14,7 +14,7 @@ It combines **Machine Learning + Cybersecurity + Cloud API Integration** into a 
 
 ---
 
-## 🧠 System Architecture
+##  System Architecture
 
 ### 🔐 Secure Gmail Integration
 - OAuth 2.0 authentication  
